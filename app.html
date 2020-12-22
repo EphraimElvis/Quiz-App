@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
+    <div class="start-timer">Quiz Timer <span id="time">05:00</span> minutes!</div>
+    <div class="main-content">
+        <div class="quiz-info">
+            <h1>Welcome to Quiz App</h1>
+            <div class="app-detail">
+                <p>This is a quiz application built using pure Javascript.</p>
+                <p>You have 5 minutes to answer 5 questions</p>
+                <p>Click start quiz button to get started</p>
+            <button class="start-quiz">Start Quiz</button>
+            </div>
+        </div>
+        
+        <div class="score-card">
+            <h1 class="displayPass"></h1>
+            <div class="score-details">
+                <p>You have completed the quiz.</p>
+            <p>You got <span class="my-score">5</span> out of <span class="total-score">5</span> questions right</p>
+            <button class="restart-quiz">Restart</button>
+            </div>
+        </div>
+        <div class="Total-Questions">
+            Question<h5>1/8</h5>
+        </div>
+        <div class="score"></div>
+        <div class="question">
+            <div class="questions"></div>
+            <ul class="answers">
+                <li>
+                    <input type="radio" name="question" id="answerA" value="">
+                    <label for="answerA"></label>                  
+                </li>
+                <li>
+                    <input type="radio" name="question" id="answerB" value="">
+                    <label for="answerB"></label>                  
+                </li>
+                <li>
+                    <input type="radio" name="question" id="answerC" value="">
+                    <label for="answerC"></label>                  
+                </li>
+                <li>
+                    <input type="radio" name="question" id="answerD" value=""> 
+                    <label for="answerD"></label>
+                </li>
+            </ul>
+            <input type="button" value="Next" id="nextQuestion">
+        </div>
+        
+    </div>
+    
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
